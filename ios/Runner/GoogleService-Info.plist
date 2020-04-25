@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>73559477100-gjvhvebedvb673ugtjc059537v5khjps.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.73559477100-gjvhvebedvb673ugtjc059537v5khjps</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBrvMlvQXdzHlfHHfvqjLPycFffDaL4nLY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>73559477100</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bk1031.malai</string>
+	<key>PROJECT_ID</key>
+	<string>project-malai</string>
+	<key>STORAGE_BUCKET</key>
+	<string>project-malai.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:73559477100:ios:5789853109e69a84898149</string>
+	<key>DATABASE_URL</key>
+	<string>https://project-malai.firebaseio.com</string>
+</dict>
+</plist>

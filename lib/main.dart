@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:project_malai/screens/home/home_page.dart';
 import 'package:project_malai/screens/startup/network_checker.dart';
 import 'package:project_malai/screens/startup/onboarding.dart';
+import 'package:project_malai/theme.dart';
 import 'config.dart';
 
 void main() {
@@ -19,7 +20,7 @@ void main() {
   }));
 
   runApp(new MaterialApp(
-    title: "VC DECA",
+    title: "Project Malai",
     home: NetworkChecker(),
     onGenerateRoute: router.generator,
     navigatorObservers: <NavigatorObserver>[routeObserver],
