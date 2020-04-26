@@ -21,16 +21,16 @@ Furthermore, if one of the customers tests positive for the coronavirus, we can 
 Both the mobile application and the manager website were built using Dart and the Flutter framework. The interactive parts of the website, such as the aisles, side bar, and store layouts are all custom Flutter widgets. We used Google Colab to develop the backend of the app/webapp system. It communicated with the Firebase database to populate and pull information. Our system included evaluating potential store trips, giving recommendations of which time slots users should sign up for, and correlating items a user might need (such as eggs) to the store product (which could be specifically free range grade AAA eggs), so that managers would know what items the store would be running out of.
 
 ## Challenges I ran into
-Managing which customers are going to which aisles and eliminating crossovers
-Had trouble with saving the locations of the aisles after reloading the page, for the manager website built in Flutter Web
-Had trouble storing multiple store trip reservations for a user
+- Managing which customers are going to which aisles and eliminating crossovers
+- Had trouble with saving the locations of the aisles after reloading the page, for the manager website built in Flutter Web
+- Had trouble storing multiple store trip reservations for a user
 ## Accomplishments that I'm proud of
-Prioritizing stores based on distance from the user, the distance they want to travel, store aisle densities, the total store populations, and the proportion of items they want that are available
-Recommending time slots based on predicted user densities in certain aisles as well as total store densities
+- Prioritizing stores based on distance from the user, the distance they want to travel, store aisle densities, the total store populations, and the proportion of items they want that are available
+- Recommending time slots based on predicted user densities in certain aisles as well as total store densities
 
 ## What I learned
-How to facilitate communication between a backend architecture and a database like Firebase
-How to utilize draggable widgets for more interactive applications in Flutter
+- How to facilitate communication between a backend architecture and a database like Firebase
+- How to utilize draggable widgets for more interactive applications in Flutter
 
 ## What's next for StorQ
 In the future, we plan for this app to use machine learning technologies to predict future store densities at different days and times. We also plan to use natural language processing to make it easier for customers to search for items and image processing to allow managers and customers to scan items. It can also allow managers to monitor aisles and gather data from them. On top of that, some planned improvements to the manager app include more customizable layouts, with different kinds of aisles, as well as an improved tool for adding and updating items within a store.
