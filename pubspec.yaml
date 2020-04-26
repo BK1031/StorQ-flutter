@@ -44,6 +44,7 @@ dependencies:
   image_picker: ^0.4.12
   image_cropper: ^1.0.0
   flutter_markdown: ^0.2.0
+  google_maps_flutter: ^0.5.26+4
   camera: ^0.5.7+2
   rubber: ^0.3.2
   shared_preferences: ^0.5.3+4

@@ -22,14 +22,7 @@ class _NetworkCheckerState extends State<NetworkChecker> {
     print(event.snapshot.value);
     if (event.snapshot.value) {
       print("Connected");
-      if (FirebaseAuth.instance.currentUser() != null) {
-        // User logged!
-        // TODO: get user info and populate user object from firebase
-        router.navigateTo(context, '/home', transition: TransitionType.fadeIn, replace: true);
-      }
-      else {
-        router.navigateTo(context, '/onboarding', transition: TransitionType.fadeIn, replace: true);
-      }
+      router.navigateTo(context, '/check-auth', transition: TransitionType.fadeIn, replace: true);
     }
     else {
       print("Not Connected");
