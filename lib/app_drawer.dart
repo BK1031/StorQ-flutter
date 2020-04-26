@@ -45,6 +45,26 @@ class _AppDrawerState extends State<AppDrawer> {
                   },
                 ),
                 new ListTile(
+                  title: new Text("Report COVID-19", style: TextStyle(color: currTextColor, fontSize: 17),),
+                  leading: new Icon(Icons.bug_report, color: Colors.grey,),
+                  onTap: () {
+                    showDialog(context: context, child: new AlertDialog(
+                      title: new Text("Report COVID-19 Exposure"),
+                      backgroundColor: currCardColor,
+                      content: new Text("Please confirm below if you or someone you are in daily contact with has tested positive for Coronavirus (COVID-19). This way, we will be able to notify the shoppers who were present at the same stores and times as you."),
+                      actions: <Widget>[
+                        new FlatButton(onPressed: () => router.pop(context), child: new Text("CANCEL")),
+                        new FlatButton(
+                          child: new Text("CONFIRM"),
+                          onPressed: () {
+                            router.pop(context);
+                          },
+                        )
+                      ],
+                    ));
+                  },
+                ),
+                new ListTile(
                   title: new Text("Settings", style: TextStyle(color: currTextColor, fontSize: 17),),
                   leading: new Icon(Icons.settings, color: Colors.grey,),
                   onTap: () {
