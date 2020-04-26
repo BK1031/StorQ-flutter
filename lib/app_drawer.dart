@@ -23,7 +23,7 @@ class _AppDrawerState extends State<AppDrawer> {
             new Column(
               children: <Widget>[
                 new Padding(padding: EdgeInsets.all(16)),
-                new ClipRRect(borderRadius: BorderRadius.all(Radius.circular(75)), child: new Image.network(profilePic, width: 125, height: 125,)),
+                new ClipRRect(borderRadius: BorderRadius.all(Radius.circular(75)), child: new Image.network("https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/93840601_229248548310154_5658292586943610880_o.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=MZAf-KKxMFQAX8glicd&_nc_ht=scontent-sjc3-1.xx&oh=80b37c15a2c4877b372ef9a0e3eb059e&oe=5EC9A6EE", width: 125, height: 125,)),
                 new Padding(padding: EdgeInsets.all(8)),
                 new Text(name, style: TextStyle(fontSize: 25, color: currTextColor),),
                 new Text(email, style: TextStyle(fontSize: 20, color: Colors.grey),),

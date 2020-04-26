@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   final databaseRef = FirebaseDatabase.instance.reference();
   
   bool showTrip = false;
-  String time = "";
+  String time = "1:00";
 
   @override
   void initState() {
@@ -78,27 +78,45 @@ class _HomePageState extends State<HomePage> {
                 _controller.complete(controller);
               },
             ),
-            new Container(
-              padding: EdgeInsets.all(8),
-              height: 100, width: 1000,
-              child: new Card(
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
-                color: currCardColor,
-                child: new Container(
-                  child: Row(
-                    children: <Widget>[
-                      new Container(
-                        child: new Text(
-                          time,
-                          style: TextStyle(),
+            new Visibility(
+              visible: showTrip,
+              child: new Container(
+                padding: EdgeInsets.all(8),
+                height: 125, width: 1000,
+                child: new Card(
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16.0))),
+                  color: currCardColor,
+                  child: new Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        new Container(
+                          width: 80,
+                          child: Center(
+                            child: new Text(
+                              time,
+                              style: TextStyle(color: mainColor, fontWeight: FontWeight.bold, fontSize: 25),
+                            ),
+                          ),
                         ),
-                      ),
-                      new Column(
-                        children: <Widget>[
-                          new Text("Walmart")
-                        ],
-                      ),
-                    ],
+                        new Expanded(
+                          child: new Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              new Text("Walmart", style: TextStyle(color: currTextColor, fontWeight: FontWeight.bold, fontSize: 20),),
+                              new Text("Items at Store:\neggs, bread, corn", style: TextStyle(color: currTextColor, fontSize: 17),),
+                            ],
+                          ),
+                        ),
+                        new Container(
+                          width: 80,
+                          child: Center(
+                            child: new Icon(Icons.notifications_active, color: mainColor,)
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

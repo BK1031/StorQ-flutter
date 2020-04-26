@@ -54,7 +54,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               new Visibility(
                 visible: name == "",
                 child: new Text(
-                  "Welcome to Itemyze",
+                  "Welcome to StorQ",
                   style: TextStyle(
                     fontSize: 50,
                     fontWeight: FontWeight.bold
